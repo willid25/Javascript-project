@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hey</p>
+    <h4 id="head_text" style="color:red"></h4>
+    <div id="text"></div>
+    <div id="text1"></div>
+</body>
+<script>
+    // output 
+    // alert("Hello World!")  // alert window
+    // alert('Script is awesome!')
+    console.log('This is a console text'); // browser console
+    console.log("Another text");
+    // using an html elt 
+    document.getElementById('head_text').innerHTML = 'I Am Learning Web Design';
+    document.getElementById('text').innerHTML = 'This Script text';
+    // variables  - data containers
+    // use let, const, var key followed by the variable name 
+    let name = 'Solomon';
+    const country = "Nigeria";
+    var state = 'FCT';
+    // let allows for changes in values 
+    let n1 = 12;
+        n1 = 34;
+    
+    const age = 34;
+        // age = 36; // error! 
+    var text = 'Hello world'
+        text = 'My text';
+    // operators  
+    // arithmetic operators +,-,*,/, %
+    console.log(n1+4); //add values 
+    console.log(10%4); // % - Modulo returns the remainder  of a fracttion 
+    /*
+        2   10
+        2   5 r 0
+        2   2 r 1
+        2   1 r 0
+        2   0 r 1
+        0101
+    */
+    // assignment operator = equality sign
+    /*
+        =: assignment
+        +=: addition assignment
+        -=: subtraction assignment
+        /=: division assignment
+        *= : multiplication assignment
+        **= exponentiation assignment
+    */
+    x = 3;
+    x = x+3;
+    x+=3
+    // comparison operators  - check and compare 2 or more stmts or values 
+    // >,<,==,===, >=,<=
+    console.log("10>2 : "+(10>2));
+    console.log("10<2 : "+(10<2));
+    n1 = 3;
+    n2 = 4;
+    n3 = 4
+    n4 = '4';
+    console.log("n1>n2 : "+(n1>n2));
+    console.log("n1==n2 : "+(n3==n2));
+    console.log("n1===n2 : "+(n3===n4));
+    // logical operators AND:&&, OR:||, NOT:! 
+    console.log(("10>2 && 12>4  : ")+(10>2 && 12>4));
+    console.log(("10>2 && 12<4  : ")+(10>2 && 12<4));
+    // OR : ||
+    console.log(("10>2 || 12<4  : ")+(10>2 || 12<4));
+    // NOT: ! 
+    console.log(("10>2 : ")+(!10>2));
+    console.log(("10==2 : ")+(10!==2));
+    // data types  - 
+    user = 'Mark Henry' // user type is string  - any text written in quotes "", ''
+    n1 =23; // n1 type is number - numeric text written without quotes
+    n3 = '24'  // string 
+    // obects - multiple values variables
+    // arrays = create a list of items 
+    array1 = ['October','November','Decemeber'];
+    colors = ["Red",'Green',"Purple"]
+    console.log(colors);
+    console.log(array1);
+    document.getElementById('text1').innerHTML = colors;
+    // exer - 
+    /*
+        create variables and store these values 
+            1. Nigeria
+            2. FCT 
+            3. 23 Years 
+            4. HTML, CSS, B5, SCRIPT
+        Make a script ouput using console, alert and an element
+    */
+</script>
+</html>

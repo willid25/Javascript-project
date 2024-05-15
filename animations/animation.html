@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--css properties-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .myDiv{
+                width: 50%;
+                padding: 5px;
+                background-color: black;
+            }
+            .big1{
+                width: 80%;
+                padding: 2px;
+                background-color: black;
+          
+            }
+
+            .big2{
+                padding: 1.5px;
+                width: 50%;
+                background-color: blue;
+               
+            }
+            .big3{
+                padding: 1.5px;
+                width: 30%;
+                background-color: red;
+                
+            }
+            .box{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                position: absolute;
+                animation: box 5s linear infinite;
+                /* linear is same speed, ease in is slow in the beginning, ease out is slow in the end */
+            }
+            
+            @keyframes box{
+                0%{
+                    background-color:black;
+                    top: 0%;right: 90%;
+                }
+                50%{
+                    background-color: blue;
+                    top: 90%;right: 0%;
+                }
+                100%{
+                    background-color:blue; 
+                    top: 0%; right: 90%;
+                }
+            }
+            .square{
+                padding: 40px;
+                background-color: aqua;
+                width: 30px;
+                position: absolute;
+                animation: square 10s ease-in-out infinite;
+            }
+            @keyframes square{
+                0%{
+                    background-color: rgb(28, 243, 28);
+                    top: 90%;left: 0%;
+                }
+                50%{
+                    background-color: brown;
+                    top: 0%; left: 90%;
+                }
+                100%{
+                    background-color: brown;
+                    top: 90%;left: 0%;
+                }
+            }
+            .bt{
+                font-size: 20px;
+                font-weight: 600;
+                padding: 12px;
+                padding-left: 40px;
+                padding-right: 20px;
+                background-color: rgb(30, 170, 30);
+                color: aliceblue;
+                border-radius: 40px;
+                position: fixed;
+                bottom: 10px; 
+                right: 20px;
+                border: 0;outline: 0;
+                cursor: pointer;
+            }
+            .bt:hover{
+                background-color: red;
+            }
+            .fa-brands {
+                padding-left: 20px ;
+                font-size: 25px;
+                padding-right: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+          <p> <div class="myDiv"></div></p>
+          <p><div class="big1"></div></p> 
+           <p><div class="big2"></div></p>
+           <p><div class="big3"></div></p>
+
+           <ul style="list-style-type: square;">
+            <!-- types= none, circle, square, disc-->
+            <li>TECNO</li>
+            <li>ITEL</li>
+            <li>SAMSUNG</li>
+            <li>OPPO</li>
+         </ul>
+         <!--Ordered list-->
+         <ol type="i">
+            <!--types=1,A,a,I,i-->
+            <!--types-->
+            <li>TECNO</li>
+            <li>ITEL</li>
+            <li>SAMSUNG</li>
+            <li>OPPO</li>
+         </ol>
+         <!--HTML CSS-->
+         <h1 style="color:red;background-color:black;border:3px solid blue">HELLO WORLD</h1>
+         <span style="color:red;background-color:black;border:3px solid blue">HELLO WORLD</span>
+         <!-- border types= solid, ridege, inset, dotted, none-->
+         <!--HTML tables-->
+         <table>
+               <tr>
+                   <th>CUSTOMER NAME</th>
+                   <th>COUNTRY</th>
+                   <th>CUSTOMER ID</th>
+                   <th>STATE</th>
+                   <th>SCORE</th>
+               </tr>
+               <tr>
+                   <td>Solomon</td>
+                   <td>Nigeria</td>
+                   <td>101111</td>
+                   <td>Edo</td>
+                   <td>90%</td>
+               </tr>
+               <tr>
+                <td>Solomon</td>
+                <td>Nigeria</td>
+                <td>101111</td>
+                <td>Edo</td>
+                <td>90%</td>
+            </tr>
+               <tr>
+                   <td>Emmanuel</td>
+                   <td>Jamaica</td>
+                   <td>101112</td>
+                   <td>Doen</td>
+                   <td>85%</td>
+               </tr>
+               <tr>
+                   <td>Jacob</td>
+                   <td>Ghana</td>
+                   <td>101113</td>
+                   <td>Kumasi</td>
+                   <td>91%</td>
+               </tr>
+               <tr>
+                   <td>Mahmud</td>
+                   <td>Tunisia</td>
+                   <td>101114</td>
+                   <td>Tunis</td>
+                   <td>67%</td>
+               </tr>
+         </table>
+         <!--HTML input elts-->
+         <form action="processForm.php" method="POST">
+           <input type="date">
+           <!-- Input tag is for creating a space where you can type-->
+           <!-- (attribute) type= text, password, email, date, color, range, submit, search, radio, checkbox, number, placeholder-->
+         </form>
+         <a href="https://www.bizmarrow.com/" target= "_blank"> <img src="images/logo-bizmarrow.jpg" width="15%"> </a>
+         <h1 style="color:white;background-color:navy;">Corporate and Group training on ICT and computer skills, Marketing, Customer care/Customer relation and Branding for Companies, Agencies, entrepreneurs, NGOs, organizations and government employees in Abuja Nigeria.</h1>
+         <p>It doesn't matter the type of work you're doing, you're likely to make use of a computer.</p>
+         <p>Whether you work for a small company, a large corporate or from home, a computer will be one of the first pieces of office equipment you're going to need. And they come in different forms, such as laptops and desktops, and even handheld devices</p>
+         <p>Those who do <a href="https://corporatetrainingmaterials.com/" title="Check Corporate website">Corporate and group</a> training for their staff, employees, managers and members recognize the value and benefits of workforce taining.</p>
+         <p>When done properly, training can make workers more efficient- increasing production, revenue and profit, while decreasing costs, waste and inefficiencies. <a href="https://www.bizmarrow.com/" target= "_blank">Effective training</a> can lead to increased compliance with regulations.</p>
+         <p>It can lead to a happier, more satisfied and engaged workforce or membership, which in turn reduces turnover and costly new employee onboarding.</p>
+         <p>Employee or staff training is essential for an organization's success. Despite the importance of training, most organizations and agencies don't take it serious</p>
+         <p>The business world is going digital, so it's important that every business organization and agency train their employees and members on the best way to use computer and information and communication technology (ICT) to improve whatever they do and achieve the greatest result.</p>
+         <p><a href="https://www.bizmarrow.com/ict-and-computer-training-registration-form/" target="_blank"><input type="button" value="Click here to register" style="color:white;background-color:red;border:3px solid red"></a></p>
+         <div>
+               Bank:<input type="text">
+         </div>
+    </body>
+            <div class="box"></div>
+    <button class="bt">Chat With Us<i class="fa-brands fa-whatsapp"></i></button>
+            <div class="square"></div>
+</html>

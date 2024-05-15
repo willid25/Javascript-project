@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* mobile first design, it means we design for mobile first before desktop */
+            .div{
+                /* background-color: red; */
+                display: block;
+                /* padding: 4rem; */
+            }
+
+            .div div{
+                background-color: orangered;
+                padding: 3rem;
+                margin: 4px;
+                width: 100%;
+            }
+
+            nav{
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                display: block;
+            }
+            nav a{
+                padding: .5rem;
+                display: block;
+                text-decoration: none;
+            }
+
+            /* we make use of media in css, we have @media screen, print and all, in screen we access the width of a device, 
+            in print we define properties on the print preview, then all targets them both at the same time  */
+              /* desktop design, anything outside will be for mobile use*/
+                @media screen and (min-width:768px){
+                    .div{
+                        background-color: blue;
+                        display: flex;
+                    }
+                    nav{
+                        display: flex;
+                    }
+                }
+        </style>
+      </head>
+    <body>
+        <div class="div">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">INTERACT</a>
+            <a href="#">ABOUT</a>
+        </nav>
+    </body>
+</html>

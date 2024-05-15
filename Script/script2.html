@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <p id="text">Click the button</p>
+    <button onclick="myFunction()">Click Me</button>
+    <button onclick="showText()">Click to show Text</button>
+    <P>click below</P>
+    <button onclick="myFnc()">Click to greet me</button>
+    <button onclick="myFunc()">Click and greet me</button>
+    <button onclick="myFunt()">Click to greet</button>
+</body>
+    <script>
+       // Functions- functions are statements that are not executed except when called
+       // functions are created with the function keyword followed by fnc name
+       // alert("Hello World"); //this is ana example of a function in javascript
+       function myFunction(){
+            alert('This is a function')
+       }
+       // not part of the fnc
+       function showText(){
+            document.getElementById('text').innerHTML="This is a function text";
+       }
+       // create threee functions returning a greeting text for morning, afternoon and evening
+       function myFnc(){
+            document.getElementById('text').innerHTML="Good Morning";
+       }
+       function myFunc(){
+            document.getElementById('text').innerHTML="Good Afternoon";
+       }
+       function myFunt(){
+            document.getElementById('text').innerHTML="Good Evening";
+       }
+
+       // function parameters - 
+       
+    </script>
+</html>

@@ -1,0 +1,23 @@
+div{
+    background-color: black;
+    color: aliceblue;
+    padding: 50rem;
+    background: radial-gradient(red,blue,gray,yellow,orange);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-repeat: repeat;
+    background-size: 40%;
+    background-position: top;
+    margin: 10px;
+    }
+
+    /*margin is outside the element and padding is inside the element, there's conic-gradient & radial-gradient, displays the background color in different shape, */
+    /*if its not on html but on your css it wont reflect on your webpage, so it must be on both html and css*/
+    /*background-image: puts image in the background
+    background-repeat: no-repeat- the element used does not repeat
+    background-size: cover;
+    background-position: top;*/

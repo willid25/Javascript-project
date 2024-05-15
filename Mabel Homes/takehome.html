@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="headerCss.css">
+        
+    </head>
+    <body>
+          <p class="nav1">
+             <a class="hh" href="">09034047356</a>
+             <a class="hh" href="">08134055367</a>
+             <a class="hh" href="">willid25@hotmail.com</a>
+             <a class="" href=""><button class="chatb">Chat With Us     <i class="fa-brands fa-whatsapp"></i></button></a>
+         </p>
+         <nav>
+             <a href="">Properties</a>
+             <a href="">Affiliates</a>
+             <a href="">About us</a> 
+             <a href="">Partner</a>
+             <a href="">Home</a>
+         </nav>
+         
+         <div class="w-50 mx-auto m-3 border p-3 rounded-3">
+                <form>
+                    <div class="form-check">
+                            <label>Username</label>
+                            <input type="text" class="form-control" id="username"/>
+                    </div>
+                    <div class="form-check">
+                            <label>Password</label>
+                            <input type="password" class="form-control" id="pword"/>
+                    </div>
+                    <div><span id="err"></span></div>
+                    <div class="form-check">
+                        <button type="button" onclick="press()" class="btn container p-2 mt-4 btn-primary">Sign-in</button>
+                    </div>
+                    <div class="form-check text-center mt-2">
+                        Don't Have an Account? <a href="http://127.0.0.1:5500/Mabel%20Homes/signup.html" target= "_blank"><button type="button" class="btn btn-primary w-25 m-1">Sign-up</button></a>
+                    </div>
+                </form>
+         </div>
+
+         <script>
+            function press(){
+                let pword = document.getElementById('pword').value;
+                    username = document.getElementById('username').value;
+
+                 if(username==''){
+                      err = 'Username Empty';
+                 }else if(pword==''){
+                      err = 'Password Empty';
+                }else{
+                      err = 'Processing!';
+                    }
+                    document.getElementById('err').innerHTML = err;
+                        }
+        </script>
+     </body>
+</html>

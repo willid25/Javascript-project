@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <style>
+        .box{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- innterval function -->
+    <div class="box"></div>
+    <p id="text"></p>
+    <button type="button" class="btn btn-dark" onclick="stop()">STOP</button>
+    <button onclick="window.location='script10.html'">link text</button>
+</body>
+<script>
+    function stop(){
+        clearInterval(boxMovement);
+    }
+    let boxMovement = setInterval(function(){
+        colors = ['red','green','yellow','orange'];
+        col = Math.floor(Math.random()*colors.length);
+        x = Math.floor(Math.random()*999);
+        y = Math.floor(Math.random()*666);
+        elt = document.querySelector('.box');
+        elt.style.top=y+'px';
+        elt.style.left=x+'px';
+        elt.style.background=colors[col];
+        elt.innerHTML = colors[col];
+    },2000)
+// timeout - executs a code only once
+let timers = setTimeout(function(){
+    // alert('This text');
+    location='script10.html';
+},5000);
+clearTimeout(timers);
+// window obects
+// alert();
+window.alert('this text');
+
+let myConfirm = confirm('Are you sure you want to leave this page');
+if(myConfirm){
+    alert('You Pressed Okay')
+}else{
+    alert("You Pressed cancel")
+}
+// prompt
+let myPrompt = prompt();
+if(myPrompt){
+    document.getElementById('text').innerHTML = myPrompt;
+}else{
+    document.getElementById('text').innerHTML = "No data!";
+}
+// location
+// window.location="https://www.google";
+// window screen
+width = screen.width;
+height = screen.height;
+document.querySelector('p').innerHTML += "Width: "+width 
+document.querySelector('p').innerHTML += "Height: "+height 
+xw = innerWidth;
+yw = innerHeight;
+document.querySelector('p').innerHTML += "<br> Window Height: "+yw 
+document.querySelector('p').innerHTML += "<br> Window width: "+xw 
+if(xw<768){
+    document.querySelector('p').innerHTML += "<h1> Mobile </h1>" 
+}else{
+    document.querySelector('p').innerHTML += "<h1> Desktop </h1>" 
+
+}
+
+</script>
+</html>

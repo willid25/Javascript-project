@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <button style="padding: 3px; width: 9%;" id="pat"></button>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <p></p>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <p class="pee"></p>
+    
+    <script>
+        // operators - 
+        // arithemtic =
+        // comparison: ==,===,>,< <=, >=
+        // asignment operator : =
+        elt = document.querySelectorAll('div');
+        a = 12;
+        elt[0].innerHTML = a;
+
+        b = 12
+        c = '12'
+        d = a===c;
+        a = 14;
+        a = a;
+        a = a+2;
+        a+=2
+        elt[1].innerHTML = a;
+        
+        // typeof  - check data type
+        colors=[];
+        person = {}
+        elt[2].innerHTML = typeof a;
+        elt[3].innerHTML = typeof colors;
+        elt[4].innerHTML = typeof person;
+
+//  string methods  - plain text
+        document.querySelector('.pee').innerHTML = "Tag name selector"
+        text = 'Hello world';
+        elt[5].innerHTML  = text.length; // length method returns the number position of the figure
+        text1 = 'Mark ';
+        text2 = "Henry"
+    elt[17].innerHTML  = text1+text2 // using addition opeerator for concatenation 
+    elt[18].innerHTML  = text1.concat(text2) // using concat method opeerator for concatenation 
+    elt[6].innerHTML  = `my name is ${text1} ${text2}` // using string template opeerator for concatenation 
+
+    // slice = cuts a string and returns a new string
+    document.querySelector('#pat').innerHTML = text.slice(3)
+    elt[7].innerHTML = text.slice(3,5)
+    elt[8].innerHTML = text.indexOf('o')
+    elt[9].innerHTML = text.lastIndexOf('o');
+    elt[10].innerHTML = text.toUpperCase()
+    document.querySelector('p').innerHTML = text.toLowerCase()
+
+    // number methods   -
+    n1 = 12.964732; 
+    elt[11].innerHTML = n1.toFixed(3);  //'.toFixed()' number method used to round up or down decimal figures of a number  
+    elt[12].innerHTML = Math.floor(n1); // 'Math.floor()' number method affects only the main number, ignores decimals
+    elt[13].innerHTML = Math.random(); // 'Math.random()' number method gives you different numbers between(0.1 & 1) on the webpage each time you refresh
+    
+    n2 = "23";
+    elt[14].innerHTML = typeof n2       //'typeof' specifies the data type, whether its string or number,
+    n3 = Number(n2)
+    elt[15].innerHTML = typeof n3       //'n3 = Number(n2)' 'Number' converts the variable from string to number, & '.toString' converts to string
+    elt[16].innerHTML = typeof n3.toString()  
+
+    </script>
+</body>
+</html>

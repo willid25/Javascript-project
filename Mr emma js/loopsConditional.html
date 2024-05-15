@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="input figure" id="x" onkeyup="myFunction()">
+    <input type="text" disabled id="checkResult" class="w-25">
+</body>
+<script>
+    function myFunction(){
+    yum = 100
+    let xv = document.getElementById('x').value;
+    document.querySelector('#checkResult').value = yum-xv;
+    if(xv == ''){
+        res = "Please make an input!"
+    }else if(xv < 5){
+            res = "Number is less than 5"
+        }
+        else if(xv > 10){
+            res = 'Number is greater than 10'
+        }
+        else{
+            res = 'Number is between 5 and 10'
+        }
+      document.querySelector('#checkResult').value = res;
+       }
+// conditional statements in JS, if, switch and tenary if
+    // ! is not, !== is not equals to, || is or, < > is lesser than & greater than (code runner, node gs on chrome)
+
+    let num = 200
+    if(num !== 100){
+            console.log('greater than 100');
+    }else{
+        console.log('lesser than 100');
+    }
+
+   
+    if(num !== 50){
+            console.log('greater than 100');
+    }else if(num < 100){
+        console.log('lesser than 100');
+    }else{
+        console.log('end');
+    }
+    
+    // tenary if, ? is then, : is else 
+
+    num > 100 ? console.log('greater than') : console.log('less than');
+    num > 100 ? (console.log('greater than'), num < 100 ? console.log('lesser than') : console.log('zero')) : null;
+
+    // switch conditional statement
+    let day = 3;
+    let dayName;
+
+    switch (day){
+        case 1:
+            dayName = 'Monday';
+            break;
+        case 2:
+            dayName = 'Tuesday';
+            break;
+        case 3:
+            dayName = 'Wednesday';
+            break;
+        case 4:
+            dayName = 'Thursday';
+            break;
+        case 5:
+            dayName = 'Friday';
+            break;
+        case 6:
+            dayName = 'Saturday';
+            break;
+        case 7:
+            dayName = 'Sunday';
+            break;
+        default:
+            dayName = 'Invalid day';
+    }
+
+    console.log(`Today is ${dayName}`);
+    console.log('Today is '+dayName);
+
+// check validity before performing an action (chat.openai.com)
+
+    //  loops in javascript = for loop, for of loop, for in loop, while loop
+    //for loop
+    let new_array = ['1','2','3','4','5']
+    for(let index = 0; index < new_array.length; index++){
+        console.log(index);
+    }
+
+    let usert = ['Mark','Henry','Sedoo','Mabel','Clara','Sid','Hank','juliana','mary','julya','promise']
+        for( let y = 0; y < 10; y++){
+            console.log(usert[y]);
+        }
+
+    //for in
+    let deray = ['blue','red','purple','green','gray']
+    for(x in deray){
+        console.log(deray[x]);
+    }
+
+    //for of
+    let IOT = {Name:'testing', Project:'Robotics'}
+    let values = Object.values(IOT)
+    for (const x of values) {
+        console.log(x);
+    }
+
+    let string = 'tough'
+    for (const x of string) {
+        console.log(x);
+    }
+
+    //while loop
+    let zero = 0
+    while(zero <= 500){
+        console.log(zero);
+        zero++;
+    }
+
+    // do{
+    //     console.log(zero);
+    //     zero++;
+    // } while (zero <= 500);
+</script>
+<!-- takehome= learn functions and do a simple quiz project -->
+</html>

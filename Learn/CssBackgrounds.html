@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .div1{
+                color: white;
+                background-color: orange;
+                padding: 30px;
+                margin: 10px;
+            }
+            .div2{
+                color: #0f4e;
+                background-color: rgb(55, 0, 255);
+                padding: 40px;   
+            }
+            .div3{
+                color: purple;
+                background: transparent;
+                /* you can change the direction in the linear gradient background color, can say to top, to bottom, to right/left, to bottom right/left, to top left/right */
+                background:linear-gradient(to top right, yellow,red,black,grey,blue);
+                padding: 40px;
+                margin: 10px;
+                border: 8px solid green;
+            }
+            .div4{
+                color: black;
+                background:radial-gradient(yellow,red,black,grey,blue);
+                padding: 30px;
+                margin: 10px;
+            }
+            .div5{
+                color: black;
+                background:conic-gradient(yellow,red,black,grey,blue);
+                padding: 30px;
+                margin: 10px;
+                width: 50rem;
+            }
+            .div6{
+                color: rgba(183, 0, 255, 0.933);
+                background-image:url(../Images/logo-bizmarrow.jpg);
+                /* you can set it to initial, round, space, repeat or no-repeat with 'background-repeat', 
+                you can also set "background-size' to cover, contain & auto, you can also set the 
+                'background-postion' to center, top, bottom, right/left, initial, inherit */
+                background-repeat:no-repeat;
+                background-size:cover; 
+                background-position:center;
+                padding: 80px;
+                height: 500px;
+                margin-top: 4px;
+                /* opacity element starts from 0 to 1, you can set .2, it covers both the content and bcakground */
+                opacity: .5;
+            }
+        </style>
+      </head>
+    <body>
+        <!-- CSS BACKGROUNDS -->
+        <div class="div1">DIV1</div>
+        <p></p>
+        <div class="div2">DIV2</div>
+        <p></p>
+        <div class="div3">DIV3</div>
+        <p></p>
+        <div class="div4">DIV4</div>
+        <p></p>
+        <div class="div5">DIV5</div>
+        <p></p>
+        <div class="div6">DIV6</div>
+    </body>
+</html>

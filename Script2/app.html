@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elt{
+            padding: 40px;
+            width: 70%;
+            background-color: orange;
+            border-radius: 12px;
+            margin: auto;
+        }
+
+        .eden{
+            padding: 50px;
+            width: 70%;
+            background-color: brown;
+            margin-top: 100px;
+            margin-left: 185px ;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="elt"></div>
+
+    <div class="eden"></div>
+
+    <div class="alto" style="margin-top: 100px;"></div>
+    <div class="altt"></div>
+
+    <div class="abi"></div>
+    <div class="ali"></div>
+    <div class="alli"></div>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+
+<script>
+    colors = ['red','blue','green','yellow','purple','gray','black'] 
+    len = colors.length;
+    n1 = Math.floor(Math.random()*len);
+    elt = document.querySelector('.elt');
+    elt.innerHTML = n1
+    elt.style.backgroundColor=colors[n1]
+    elt.style.color='#fff'
+
+    //  while the color is changing write the color name in the box //
+    let col = ['blue','orange','green','purple','violet']
+    pac = col.length;
+    n2 = Math.floor(Math.random()*pac);
+    eden = document.querySelector('.eden');
+    eden.innerHTML = col[n2]
+    eden.style.backgroundColor=col[n2]
+    eden.style.color='black'
+
+    // Create a 3  11 digit phone numbers 090,080,070 that refreshes and gives random numbers //
+    phone1 = (Math.random()*99999999).toFixed();
+    phone2 = (Math.random()*99999999).toFixed();
+    phone3 = (Math.random()*99999999).toFixed();
+    newElt = document.querySelectorAll('p');
+    newElt[0].innerHTML = '090'+phone1
+    newElt[1].innerHTML = '080'+phone2
+    newElt[2].innerHTML = '070'+phone3
+
+    // return the first letters of any given 'first name & last name'//
+    let name = 'Donald Adanu';
+    fl = name.slice(0,1);
+    fnl = fl[0]
+    newElt[4].innerHTML = fl
+    newElt[5].innerHTML = fnl
+    space = name.indexOf(' ');
+    newElt[6].innerHTML = space
+
+    lt = name.slice(space+1,space+2);
+    newElt[7].innerHTML = lt
+    newElt[8].innerHTML = fl+lt
+
+    
+
+</script>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+                  *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          button{box-sizing: border-box;
+            outline:0;border: 0;}
+            .title{
+                padding: 5px;
+                background-color: green;
+                color: white;
+                font-weight: 700;
+                font-size: 25px;
+                animation: title 10s linear infinite;
+            }
+            @keyframes title{
+                0%{
+                    padding-left: 0px;
+                }
+                100%{
+                    padding-left: 90%; 
+                }
+            }
+          .profile{
+            background-color: aliceblue;
+            flex-direction: row-reverse;
+            display: flex;
+            box-shadow: 12px 12px 20px 10px #e4dede;
+          }
+          .bd1{
+            padding: 10px;
+          }
+
+          .form-area{
+            padding: 20px;
+            width: 60%;
+            border: 1px solid green;
+            /* background-color: green; */
+            /* background-image: linear-gradient(to left,white 94%,rgba(0,0,0,0)20%); */
+            margin: auto;
+            margin-top: 40px;
+            border-left: 60px solid green;
+
+            
+          }
+
+          input,select,.gf{
+             display: block; /*display puts things in straight line or block form, flex is for straight line, block is to put them under */
+            padding: 20px;
+            width: 100%;
+            margin: 10px;
+          }
+
+          .aw{
+            background-color: green; 
+            color: white;
+            padding: 10px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+          .gf{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            outline: 0;border: 0;
+          }
+          aside{
+            position: fixed;
+            width: 10%;
+            background-color: green;
+            height: 74%;
+            overflow-y: scroll;
+          }
+          main{
+            width: 80%;
+            margin-left: 10%;
+          }
+          .item{
+            background-color: green;
+            box-shadow: 0px 0px 15px 3px #393636;
+            padding: 30px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+          }
+          .qq{
+            border: 1px solid white; 
+            border-radius: 6px; 
+            padding: 15px; 
+            background-color: green; 
+            color: white;
+          }
+
+          ::-webkit-scrollbar{
+            width: 15px;
+            background-color: black;
+          }
+          ::-webkit-scrollbar-thumb{
+            background-color: rgb(39, 39, 42);
+            border-radius: 30px;
+            border: 3px solid aliceblue;
+          }
+          ::-webkit-scrollbar-track{
+            background-color: aliceblue;
+          }
+
+          @media screen and(min-width:765px){
+
+          }
+          .item:hover{
+            background-color: rgb(26, 207, 26);
+          }
+          /* button:hover{
+            background-color: rgb(26, 207, 26);
+          } */
+          .aw:hover{
+            background-color: rgb(26, 207, 26);
+          }
+          .gf:hover{
+            background-color: rgb(26, 207, 26);
+          }
+          h5{
+            padding: 3px;
+          }
+        </style>
+      </head>
+
+    <body>
+        <h1 class="title">metPlatform</h1>
+        <div class="profile">
+            <img src="../Images/pic1.jpg" width="100px">
+            <h5>WORLD BEST</h5>
+        </div>       
+        <aside>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-shop"></i></button>
+              <h5>SHOP</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-circle-exclamation"></i></button>
+              <h5>NOTICES</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-clock-rotate-left"></i></button>
+              <h5>HISTORY</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-credit-card"></i></button>
+              <h5>PAYMENTS</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-signal"></i></button>
+              <h5>STATS</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-gear"></i></button>
+              <h5>SETTINGS</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-user"></i></button>
+              <h5>PROFILE</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-file-invoice"></i></button>
+              <h5>ACCOUNT</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-thermometer"></i></button>
+              <h5>STATUS</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-address-card"></i></button>
+              <h5>ADDRESS</h5>
+            </div>
+            <div class="item">
+              <button class="qq"><i class="fa-solid fa-question"></i></button>
+              <h5>HELP</h5>
+            </div>
+        </aside>
+        <main>
+          <div class="bd1">
+            <button class="aw">ADD PRODUCT</button>
+            <button class="aw">CHECK A PRODUCT</button>
+          </div>
+            <div class="form-area">
+              <input type="text">
+              <select>
+                  <option value="first">Male</option>
+                  <option value="second">Female</option>
+                  <option value="third">Others</option>
+              </select>
+              <input type="date">
+              <input type="text">
+              <button class="gf">UPDATE</button>
+          </div>
+          </div>
+        </main>
+    </body>
+</html>

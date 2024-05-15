@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <style></style>
+</head>
+<body>
+    
+    <input type="text" disabled id="result" class="w-25">
+    <input type="text" id="exp" onkeyup="agcalc()" placeholder="Year of birth e.g. 2000" >
+
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <div class="w-75 text-center mx-auto rounded p-5 my-5 bg-primary border shadow">
+        <div class="container">
+          <div class="h3">MY GREETING APP</div>
+           <div class="h1 bg-secondary p-3 rounded text-dark" id="clock">
+             <span id="hour">00</span> : <span id="min">00</span> : <span id="sec">00</span>
+           </div>
+           <div class="h3" id="greet">GREETING</div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function agcalc(){
+        year = new Date().getFullYear();
+        let exp = document.querySelector('#exp').value;
+        document.querySelector('#result').value = year-exp;
+        let result = document.querySelector('#result').value;
+        result = year-exp;
+
+        if(exp>year){
+            document.querySelector('#result').value = `Year of birth is greater than present year`;
+        }else if(exp<1904){
+            document.querySelector('#result').value = `Age is greater than 120`;
+        }else{
+            document.querySelector('#result').value = year-exp;
+        }
+    }
+    
+    setInterval(function(){
+        myFunction();
+    },1000);
+
+    function myFunction(){
+        myDate = new Date();
+        let secs = myDate.getSeconds();
+        let min = myDate.getMinutes();
+        let hrs = myDate.getHours();
+        let time =  `${hrs} : ${min} : ${secs}`;
+        document.querySelector('#clock').innerHTML = time;
+
+        if(hrs<12){
+            greeting = 'Good Morning';
+        }else{
+            greeting = 'Good Afternoon';
+        }
+            document.querySelector('#greet').innerHTML = greeting;
+
+    }
+    //advance the age calc to check for errors: dob greater than year, or age greater than 120
+   //create a greeting app - greet Good Morning, Good afternoon
+
+  //conditions
+   let text = document.querySelectorAll('p');
+   a = 4;
+   if(a>10){
+    text[1].innerHTML = `${a} is greater than 10`;
+   }else{
+    text[1].innerHTML = `${a} is not greater than 10`;
+   }
+
+   year = 2024
+   dob = 2000
+   if(dob>year){
+    text[2].innerHTML = `Error: ${dob} is greater than ${year}`;
+   }else{
+    text[2].innerHTML = `${dob} is not greater than ${year}`;
+   }
+
+</script>
+</html>

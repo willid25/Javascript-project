@@ -1,0 +1,41 @@
+.form-area{
+    padding: 20px;
+    width: 50%;
+    border: 1px solid blue;
+    margin: auto;
+    margin-top: 40px;
+    border-left: 60px solid blue;
+    }
+
+    .er{
+        width: 95.5%;
+    }
+
+input,select,button{
+    display: block; /*display puts things in straight line or block form, flex is for straight line, block is to put them under */
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    color: blue;
+    outline: 0;
+    border: 1px solid blue;
+    font-weight: 700;
+  }
+.dh{
+    color: rgb(53, 53, 163);
+}
+button{
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    }
+button:hover{
+    background-color: rgb(28, 28, 177);
+}
+.signin{
+    width: auto;
+    display: inline;
+}
+.dd, .dh{
+    text-align: center;
+}

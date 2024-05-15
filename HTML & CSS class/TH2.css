@@ -1,0 +1,94 @@
+/**
+ * @author Firstname Lastname <firstname.lastname@example.com>
+ * @file Description
+ * @desc Created on 2023-09-04 1:34:14 pm
+ * @copyright APPI SASU
+ */
+.buttons {
+    width: 960px;
+    margin: 0auto;}
+.chatbtn{
+margin: 40px;
+border-radius: 40px;
+color: burlywood;
+}
+:root{
+    --textcolor:rgb(242, 230, 230);
+    --bgColor:orange;
+    --linkhover:rgb(136, 93, 93);
+    --Bcolor:yellow;
+}
+header{
+    background-color: var(--bgColor);
+    padding: 15px;
+    color: var(--textcolor);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: var(--textcolor);
+    display: flex;
+    position:sticky;
+    top: 0;
+}
+
+nav a{
+    padding: 12px;
+    text-decoration: none;
+    color: var(--bgColor);
+    font-weight: 700;
+    display: block;
+}
+
+nav a:hover{
+/*background-color: blueviolet;*/
+border-bottom: 5px solid brown;
+}
+
+.chatbn{
+    border: 0; outline: 0;
+    background-color: var(--linkhover);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: aliceblue;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.container{
+    /*display flex is used to put content side by side*/
+    display:flex;
+}
+.item{
+    padding: 40px;
+    background-color: var(--linkhover);
+    margin: 5px;
+    width: 100%;
+}
+.containerB{
+    position: absolute;
+    top: 0;right: 0;
+}
+.stuf{
+    padding: 30px;
+    background-color: var(--Bcolor);
+    cursor: pointer;
+    font-size: 50px;
+}
+.containerA{
+    position: absolute;
+    bottom: 0;left: 0;
+}   
+.stuff{
+    padding: 30px;
+    background-color: var(--Bcolor);
+    font-size: 50px;
+    cursor: pointer;
+}
+

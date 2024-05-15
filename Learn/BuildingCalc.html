@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <style>
+        .calc{
+            width: 300px;
+            background-color: #776c6c;
+            margin: auto;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px inset #000;
+            border-radius: 5px;
+        }
+        .input input{
+            border: 0;
+            outline: 0;
+            width: 100%;
+            display: block;
+            background-color: #776c6c;
+            box-shadow: 0px 0px 4px 1px inset #000;
+            border-radius: 4px;
+        }
+
+        .input{
+            width: 90%;
+            margin: auto;
+        }
+
+        button{
+            box-shadow: 0px 0px 4px 1px inset #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <div class="input">
+            <input type="text" id="results"/>
+            <input type="text" id="exp"/>
+        </div>
+        <div>
+                <div>
+                    <button class="btn btn-warning" onclick="writenumber('7')">7</button>
+                    <button class="btn btn-warning" onclick="writenumber('8')">8</button>
+                    <button class="btn btn-warning" onclick="writenumber('9')">9</button>
+                    <button class="btn btn-warning" onclick="writenumber('*')">X</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning" onclick="writenumber('4')">4</button>
+                    <button class="btn btn-warning" onclick="writenumber('5')">5</button>
+                    <button class="btn btn-warning" onclick="writenumber('6')">6</button>
+                    <button class="btn btn-warning" onclick="writenumber('/')">/</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning" onclick="writenumber('1')">1</button>
+                    <button class="btn btn-warning" onclick="writenumber('2')">2</button>
+                    <button class="btn btn-warning" onclick="writenumber('3')">3</button>
+                    <button class="btn btn-warning" onclick="writenumber('-')">-</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning" onclick="C()">C</button>
+                    <button class="btn btn-warning" onclick="writenumber('0')">0</button>
+                    <button class="btn btn-warning" onclick="CC()">CC</button>
+                    <button class="btn btn-warning" onclick="writenumber('+')">+</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning w-50" onclick="solve()">=</button>
+                    <button class="btn btn-warning" onclick="writenumber('.')">.</button>
+                </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    //condition
+    function solve(){
+        let exp = document.getElementById('exp').value;   //if its a paragraph element or any text elements you'll use '.innerHTML' but if making use of an input element you'll use '.value'
+    document.getElementById('results').value = eval(exp);   //the 'eval()' function converts plain text into a javascript statement 
+    }
+
+    function writenumber(a){
+        document.getElementById('exp').value += a    //if you want the number to be continuous on the calc you put '+' infront of the "=", we are going to pass a parameter, when you call a function you now pass the value of a, when you call it you pass a value assigned to a variable created when that functio was declared//
+    }
+
+    function CC(){
+        document.getElementById('exp').value = '';
+    }
+
+    function C(){
+        let exp = document.getElementById('exp').value;
+        exp = exp.slice(0,-1)
+        document.getElementById('exp').value = exp;
+    }
+
+    //in conditions we have- 'if'-executes only if the condition is true, 'else if' and 'else'
+    // function solve(){
+    //     let exp = document.getElementById('exp').value;
+    // if(exp>10){
+    //     msg = "Number is greater than 10";
+    // }
+    // else if(exp<5){
+    //     msg = "Number is less than 5";
+    // }
+    // else{
+    //     msg = "Number is between 5 & 10";
+    // }
+    // document.getElementById('results').value = msg;
+    // }
+</script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1></h1>
+    <p></p>
+    <div id="myDiv">Hey i am new </div>
+
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p id="text5"></p>
+    <p id="text5a"></p>
+    <p id="text6"></p>
+    <p id="text7"></p>
+    <p id="text8"></p>
+    <p id="text9"></p>
+    <p id="text10"></p>
+    <p id="page1"></p>
+    <p id="page2"></p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    
+</body>
+<script>
+  //alert window
+//   alert("hello world");
+    // document.write('Hello World');
+    console.log("Hello World");
+    document.getElementById('myDiv').innerHTML = 'New text';
+
+    //variables - data containers
+    //create variables with let, const or var 
+    let a = 12
+    const b = 13;
+    var c = a+b;
+    
+    //using an html element make three outputs 
+    document.getElementById('text1').innerHTML = 'Good day';
+    document.getElementById('text1').innerHTML = b;
+    document.getElementById('text2').innerHTML = 'Good evening';
+    document.getElementById('text3').innerHTML = 'Good morning';
+    document.getElementById('text4').innerHTML = a;
+
+    // data type 
+    a = 12 // data type number  - numeric wrriten wihtout quotes
+    let name = 'John' // type string - any text written in quotes  
+    c = '24' // string 
+
+    // objects - multi value variables
+    // array object - arrays are list, acces the values  using index
+    let courses = ['html','css','b5','script','py'] // array
+    console.log(courses)
+    document.getElementById('text4').innerHTML = courses;
+    document.getElementById('text5').innerHTML = courses[0];
+    // create an array of fruits and colors  
+    let fruits = ['Mango','Apple','Pear','Berry','Orange']
+    console.log(fruits)
+    document.getElementById('text5a').innerHTML = fruits;
+    document.getElementById('text6').innerHTML = fruits[3];
+
+    let colors = ['green','brown','red','black','purple']
+    console.log(colors)
+    document.getElementById('text7').innerHTML = colors;
+    document.getElementById('text8').innerHTML = colors[2]; 
+
+    // object  - stores multi values but using object keys 
+    let car = {
+        "carname":"Honda",
+        "carColor":"red",
+        "mft":'Honda',
+        "yr":"2022"
+    } 
+    console.log(car);
+    document.getElementById('text9').innerHTML = car.carname; 
+    document.getElementById('text10').innerHTML = car['yr']; 
+
+    //create an object of a person and access the properties
+    elt = document.querySelectorAll('div');
+
+    let williams = {
+        "age":"28 years", "weight":"90lbs","skintone":"fair","status":"single"
+    }
+    console.log(williams);
+    document.getElementById('page1').innerHTML = williams.status;
+    document.getElementById('page2').innerHTML = williams['age']
+
+    header = 'Age:';
+    text3 = ' 28 years'
+    elt[1].innerHTML = header+text3
+    elt[2].innerHTML = williams.status;
+    elt[3].innerHTML = `Age: ${williams['age']}`
+    elt[4].innerHTML = `${header+text3}`
+
+
+ </script>
+
+</html>

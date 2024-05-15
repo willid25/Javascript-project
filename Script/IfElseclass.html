@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container p-3">
+        <input class="form-control" id="x" />
+        <button class="btn btn-primary mt-3" onclick="myFucntion()"> Check</button>
+        <div class="p-3" id="checkResult"></div>
+    </div>
+    <input  id="val"/>
+    <div id="results"></div>
+    
+    <button onclick="fn()"> click me</button>
+    <p></p>
+    <p id="text1"></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+</html>
+<script>
+    function fn(){
+        document.querySelector('#text1').innerHTML = 'Click'
+    }
+    //--Functions--//
+    elt = document.querySelectorAll('p');
+    person = {"name":"solomon"}
+    elt[0].innerHTML = person.name
+
+    // date object - 
+    elt[1].innerHTML = new Date();
+    let myDate = new Date();
+    day = myDate.getDay();
+    month = myDate.getMonth();
+    date = myDate.getDate();
+    year = myDate.getFullYear();
+    mins = myDate.getMinutes();
+    sec = myDate.getSeconds();
+    hr = myDate.getHours();
+    elt[2].innerHTML = date;
+    // conditons  - if,else if else statements
+    n1 = 10;
+    n2 = 2
+    if(n1<2){
+        result  = "10<2"
+    }else{
+        result  = "10>2"
+    }
+    elt[3].innerHTML = result;
+    // voting age
+    const age = 19;
+    const voting_age = 18;
+    if(age>=voting_age){
+        text = "Can vote";
+    }else{
+        text = "Cannot vote"
+    }
+    elt[4].innerHTML = text;
+    // class - 
+    let hour = 1;
+    // time 04:04
+    // 00:00
+    // display  a greeting text base on the hour of the day
+    // hour  = 4;
+    if(hour<12){
+        greeting = 'Morning';
+    }else{
+        greeting = 'Afteroon';
+    }
+    elt[5].innerHTML = greeting;
+    //  
+    if(hour<12){
+        greeting = 'Morning'
+    }
+    else if(hour>12 && hour<16){
+        greeting = 'Afternoon';
+    }else{
+        greeting = 'Evening'
+    }
+    elt[5].innerHTML = greeting;
+
+</script>
+<!-- 
+    1. Advance the months function to check for 
+        a. empty values,
+        b. check for invalid months values
+    2. Creata a function that returns a data afix
+        1,21,31 = 1st,21st, 31st
+        2,22 = 2nd 
+        3rd,
+ -->

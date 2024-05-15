@@ -1,0 +1,107 @@
+button{
+    background-color: aquamarine;
+    padding: 30rem,20rem,30rem,20rem;
+}
+
+button{
+    background-color: green;
+    margin: 30px;
+    
+}
+
+.buttons {
+    width: 960px;
+    margin: 0auto;}
+.chatbtn{
+margin: 40px;
+border-radius: 40px;
+color: burlywood;
+}
+.action_btn {
+    width: 500px;
+    margin:0 auto
+}
+
+table{
+    background-color: black;
+    color: aliceblue;
+    border: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: #808080;
+    cursor: pointer;
+}
+
+p{
+    background-color: blue;
+}
+
+p:nth-child(even){
+    background-color: rgb(88,63,111);
+}
+tr:hover{
+    background-color: #aaa;
+}
+
+.container{
+    /*display flex is used to put content side by side*/
+    display:flex;
+}
+
+.item{
+ padding: 40px;
+ background-color: var(--bgColor);
+ margin: 5px;
+ width: 100%;
+}
+
+:root{
+    --textcolor:rgb(242, 230, 230);
+    --bgColor:orange;
+    --linkhover:rgb(136, 93, 93);
+}
+header{
+    background-color: var(--bgColor);
+    padding: 15px;
+    color: var(--textcolor);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: var(--textcolor);
+    position:sticky;
+    top: 0;
+    display: flex;
+}
+
+nav a{
+    padding: 12px;
+    text-decoration: none;
+    color: var(--bgColor);
+    font-weight: 700;
+    display: block;
+}
+
+nav a:hover{
+/* background-color: var(--linkhover); */
+border-bottom: 5px solid #000;
+}
+
+.chatbn{
+    border:0; outline: 0;
+    background-color: var(--bgColor);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: aliceblue;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}

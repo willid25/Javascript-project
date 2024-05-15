@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p id="text">Click the button</p>
+    <button onclick="myFunction()"> Click Me </button>
+    <button onclick="showText()"> Click to show Text </button>
+    <button onclick="sum1()">Sum</button>
+    <button onclick="sum(10,5)">Sum</button>
+    <button onclick="sum(1,5)">Sum</button>
+    <p id="text2">Click the button</p>
+    <button onclick="colors('Red')">Colors</button>
+    <button onclick="colors('Blue')">Colors</button>
+    <button onclick="colors('Green')">Colors</button>
+    <h2 id="h2"></h2>
+    <h1 id="h1">Script is awesome</h1>
+    <button onclick="changeColor()">Click to change color</button>
+</body>
+<!--  -->
+<script>
+    // functions  - fucntions are stmts that are not excuted except when called
+    // functions are created with the function keyword follow by fnc name 
+    // alert("Hello world");// this is an example of a function in javascript
+    function myFunction(){
+        alert('This is a function');
+    }
+    // not part of the fnc
+    function showText(){
+        document.getElementById('text').innerHTML = "This is a function text!";
+    }
+    // create three functions returning a greeting text for morning, afternoon and evening
+    // function parameters  - 
+    function sum1(){
+        alert(4+5);
+    }
+    function sum(a,b){
+        alert(a+b);
+    }
+    // a function that returns colors
+    function colors(color){
+        document.getElementById('text2').innerHTML = color
+    }
+    // use script to alter css
+    document.getElementById('h2').innerHTML = "Script CSS";
+    document.getElementById('h2').style.color="red";
+
+    function changeColor(){
+        document.getElementById('h1').style.color='#fff'
+        document.getElementById('h1').style.background='red'
+        document.getElementById('h1').style.padding='30px'
+        document.getElementById('h1').style.border='4px solid orange';
+
+    }
+    // make three buttons, which when clicked should change the background of the above div
+    /*
+    
+    */
+    
+
+    
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        // window.alert()
+        // window.open('google.com');
+        // window.location='google.com'
+        let myConfirm = confirm('Have you learnt Script before');
+        if(myConfirm){
+            document.querySelector('p').innerHTML = true;
+        }else{
+            document.querySelector('p').innerHTML = false;
+        }
+        // prompt  -   text input from users
+        let dataX = prompt('How old are you?');
+        if(dataX){
+            document.querySelector('p').innerHTML +=`<br> ${dataX}`;
+        }
+        // json - javascript Object Notation 
+        let user = {'name':'Henry','age':'24'};
+            user1 = JSON.stringify(user);
+            console.log(user1);
+        
+
+        person='{"age":"23","addr":"Wuse"}';
+        user1 = JSON.parse(person)
+        console.log(user1);
+    </script>
+</body>
+</html>

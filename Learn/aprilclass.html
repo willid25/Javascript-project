@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>S/N</th>
+            <th>Name</th>
+        </tr>
+    </table>
+    <p></p>
+    <div></div>
+</body>
+<script>
+    // for loop- checks a condition and repeats code executio as long as the condition is true
+    for(x = 0; x<10; x++){
+        document.querySelector('p').innerHTML += x;
+    }
+    let users = ['mark','henry','sedoo','clara','sid','hank']
+    for(y = 1; y<=10; y++){
+        document.querySelector('table').innerHTML += `
+            <tr>
+                <td>${y}</td>
+                <td>${users[y-1]}</td>
+            </tr>
+        `;
+    }
+    //while loop- test a condition once and executes block of codes as long as the condition is 
+    a = 0
+    while (a<11){
+        a++
+        document.querySelector('div').innerHTML +=a;
+    }
+
+    //browser object model & window object model
+    //json- used to work with objects sent from external sources
+
+</script>
+</html>

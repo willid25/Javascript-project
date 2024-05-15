@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        loadData()
+        async function loadData(){
+            a = await fetch('file.txt');
+            b = await a.text();
+            document.write(b);
+        }
+        //KmUSKTOc8jWq5TncmKsvCjcFkcTgItzjBU3aVd1l
+getData()
+        async function getData(){
+            a = await fetch('https://randomuser.me/api/');
+            // b = await a.text();
+            b = await a.json();
+            document.write(b.results[0].name.first);
+        }
+        // https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+nasaApi();
+        async function nasaApi(){
+            let key  = 'DEMO_KEY'
+            url = "https://api.nasa.gov/planetary/apod?api_key="+key;
+            a = await fetch(url);
+            b = await a.text();
+            // b = await a.json();
+            document.write(b);
+        }
+    </script>
+</body>
+</html>

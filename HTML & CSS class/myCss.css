@@ -1,0 +1,45 @@
+h1{
+    background-color: black;
+    background-color: rgb(13,000,225);
+    background-color: #adf;
+    background-color: rgba(225,225,225,.5);
+    background: linear-gradient(to top right,red,blue,green);
+    color: red;
+    padding: 30px;
+}
+div{
+    background-color: black;
+    color: aliceblue;
+    padding: 50rem;
+    margin: none;
+    background: radial-gradient(red,blue,gray,yellow,orange);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-image: url(Images/pic1.jpg);
+    background-repeat: repeat;
+    background-size: 40%;
+    background-position: top;
+    /*margin is outside the element and padding is inside the element, there's conic-gradient & radial-gradient, displays the background color in different shape, */
+    /*if its not on html but on your css it wont reflect on your webpage, so it must be on both html and css*/
+    /*background-image: puts image in the background
+    background-repeat: no-repeat- the element used does not repeat
+    background-size: cover;
+    background-position: top;*/
+    margin: 100px;
+    }
+    button{
+        background-color: green;
+        padding: 10px,30px,10px,30px;
+        border: 0;
+        outline: 0;
+        border-radius: 20px;
+}
+p{
+    text-align: center;/*left, right, center, justify*/
+    font-size: 40px; /*sets the size of the text*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*defines special font for the text*/
+    font-weight: 700;/*creates a bold text varying from 100-1000*/
+    text-transform: uppercase;/*changes the case of the letters- can be uppercase, lowercase, capitalize, etc*/
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+          div{
+            background-color: aqua;
+            padding: 40px;
+          }
+
+        </style>
+      </head>
+    <body>
+      <!-- events are things that happen to html elements, theres an "onclick, onscroll, mouseover, pageload, onchange, onkeyup.. etc"  -->
+        <p id="text">Learning Functions</p>
+        <button onclick="myFunction()">Click Me</button>
+        <button onclick="myFunc()">Click to Greet Morning</button>
+        <button onclick="myFnctn()">Click to Greet Afternoon</button>
+        <button onclick="myFnc()">Click to Greet Evening</button>
+
+        <p></p>
+        <button onclick="sum()">Click to SUM</button>
+        <button onclick="plus(5,6)">Click to Plus</button>
+
+        <p id="text2">Learning Functions</p>
+        <button onclick="colors()">Click to show color</button>
+
+        <p id="text3">Learning Functions</p>
+        <button onclick="colorrs('<h1>Purple</h1>')">Click & show colorr</button>
+        <button onclick="colorrs('<h1>Green</h1>')">Click & show colorr</button>
+
+        <h2 id="h2"></h2>
+        <h2 id="h3"></h2>
+        <h1 id="h1">Script is awesome</h1>
+        <button onclick="changeColor()">Click to change color</button>
+
+        
+        <div id="back1"></div>
+        <button onclick="divtakehome()">Click to switch color</button>
+        <button onclick="divtake()">Click to switch color</button>
+        <button onclick="divth()">Click to switch color</button>
+    </body>
+    <script>
+      /* functions- are statements that are not executed except when called
+      functions are created with the function keyword followed by the function name*/
+      // alert("Hello World"); //this is an example of a function in javascript//
+
+      function myFunction(){
+        document.getElementById('text').innerHTML = "A Function";
+      }
+
+      function myFunc(){
+        document.getElementById('text').innerHTML = "Good Morning";
+      }
+
+      function myFnctn(){
+        document.getElementById('text').innerHTML = "Good Afternoon";
+      }
+
+      function myFnc(){
+        document.getElementById('text').innerHTML = "Good Evening";
+      }
+      
+      // function parameters //
+      function sum(){
+        a = 4;
+        b = 5;
+        alert(a + b);
+      }
+
+      function plus(a,b){
+        alert(a + b);
+      }
+
+      //functions that return colors//
+      function colors(){
+        document.getElementById('text2').innerHTML = 'Red'
+      }
+      //now using parameters to return colour//
+      function colorrs(color){
+        document.getElementById('text3').innerHTML = color
+      }
+
+      //Use javascript to alter CSS
+      document.getElementById('h2').innerHTML = "<h1 style='color:purple'>Script CSS</h1>";
+
+      document.getElementById('h3').innerHTML = "<h1>Script CSS</h1>";
+
+      function changeColor(){
+        document.getElementById('h1').style.color='red';
+        document.getElementById('h1').style.background='green';
+        document.getElementById('h1').style.padding='30px';
+        document.getElementById('h1').style.border='4px solid gray';
+      }
+
+      // takehome= make three buttons which when clicked should change the background of the above div//
+      function divtakehome(){
+        document.getElementById('back1').style.background='black';
+        document.getElementById('back1').style.padding='40px';
+      }
+
+      function divtake(){
+        document.getElementById('back1').style.background='yellow';
+        document.getElementById('back1').style.padding='40px';
+      }
+
+      function divth(){
+        document.getElementById('back1').style.background='gray';
+        document.getElementById('back1').style.padding='40px';
+      }
+    </script>
+</html>

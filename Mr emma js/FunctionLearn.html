@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <p>GOOD DAY GUYS</p>
+    <h4 id="head_text" style="color:red"></h4>
+    <div id="Subject"></div>
+    <div id="Subject1"></div>
+    <div id="Subject2"></div>
+    
+    <p id="text1">revenue</p>
+    <button onclick="showText()"> 1,21,31 </button>
+    <button onclick="showT()">2,22</button>
+    
+    <div></div>
+    <div class="container">
+        <h1>SIMPLE QUIZ</h1>
+        <h4>click the buttons below to display questions & options!</h4>
+        <button id="next-btn" onclick="showQuestion1()">Q1</button>
+        <button id="next-btn" onclick="showQuestion2()">Q2</button>
+        <button id="next-btn" onclick="showQuestion3()">Q3</button>
+        <div id="question">Question</div>
+        <div id="options">Options</div>
+        <p><input id="ans" type="text" placeholder="input answer here! e.g. c" onkeyup="register()"></p>
+        <div id="result" style="width: 70px;">...</div>
+    </div>
+</body>
+
+    <script>
+    function register(){
+            let ans = document.querySelector('#ans').value;
+ 
+            if(ans=='' ){
+                res = 'incomplete field!'
+                       } else if(ans.length>1){
+                res = 'Incorrect Answer'
+                        }
+            else if(ans == 'd' || ans == 'c' || ans == 'b'){
+                res = 'Correct Answer'
+                    } else if(ans !== 'd' || ans !== 'c' || ans !== 'b'){
+            res = 'Incorrect Answer'
+                    }
+            else {
+                res = '...'
+                    }
+                document.querySelector('#result').innerHTML = res;
+                    }
+
+        /* functions- are statements that are not executed except when called
+      functions are created with the function keyword followed by the function name*/
+        function showText(){
+            document.getElementById('text1').innerHTML = '1st, 21st, 31st';
+        }
+        function showT(){
+            document.getElementById('text1').innerHTML = '2nd,3rd'
+        }
+            
+        // output 
+        // alert window
+        // alert("Hello World") 
+        // alert('Script is awesome!')
+        console.log('This is console text');//browser console
+        console.log("Another text"); 
+
+        document.getElementById('head_text').innerHTML = 'I Am Learning Web Design';
+        document.getElementById('Subject').innerHTML = 'Java Script';
+
+        //let, const, var & array
+        let age = '23 Years';
+        const country = "Nigeria";
+        var state = 'FCT';
+
+        array1 = ['HTML','CSS','BS','SCRIPT'];
+        console.log(array1);
+        document.getElementById('Subject1').innerHTML = array1;
+
+        array2 = ["RECOMMEND ME!"];
+        console.log(array2);
+        document.getElementById('Subject2').innerHTML = array2;
+
+        // FOR QUIZ
+        function showQuestion1(){
+        document.getElementById('question').innerHTML = "Question 1: Who is the President of Nigeria?";
+	    document.getElementById('options').innerHTML = "(a)Balablue (b)A town hall (c)BlueBlue (d)Tinubu";
+        }
+
+        function showQuestion2(){
+        document.getElementById('question').innerHTML = "Question 2: What is 5 + 5?";
+	    document.getElementById('options').innerHTML = "(a)100 (b)50 (c)10 (d)55";
+        }
+
+        function showQuestion3(){
+        document.getElementById('question').innerHTML = "Question 3: How many megabytes make a Gigabyte?";
+	    document.getElementById('options').innerHTML = "(a)10 (b)1000 (c)200 (d)500";
+        }
+        
+    </script>
+    <style>
+        /* for quiz */
+        .container{
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        #options{
+            margin-top: 20px;
+        }
+
+        #next-btn{
+            
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #next-btn:hover{
+            background-color: #0056b3;
+        }
+
+        #result{
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgb(192, 238, 238);
+            padding: 15px;
+        }
+    </style>
+</html>
