@@ -65,11 +65,13 @@
     elt[18].innerHTML  = text1.concat(text2) // using concat method opeerator for concatenation 
     elt[6].innerHTML  = `my name is ${text1} ${text2}` // using string template opeerator for concatenation 
 
-    // slice = cuts a string and returns a new string
+    // .slice = cuts a string and returns a new string
     document.querySelector('#pat').innerHTML = text.slice(3)
     elt[7].innerHTML = text.slice(3,5)
-    elt[8].innerHTML = text.indexOf('o')
+    // .indexOf gives the number(0,1,2,3,4 etc) position of the letter/string in the bracket, .lastIndexOf gives the last number of the letter in the word
+    elt[8].innerHTML = text.indexOf('o') 
     elt[9].innerHTML = text.lastIndexOf('o');
+    // .toUpperCase() & .toLowerCase() makes the word capital or small letters
     elt[10].innerHTML = text.toUpperCase()
     document.querySelector('p').innerHTML = text.toLowerCase()
 

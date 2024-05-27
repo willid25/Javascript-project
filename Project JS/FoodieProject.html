@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+            }
+
+        header{ 
+            display: flex;
+            padding: 5px;
+            color: orange;
+            }
+
+        nav {
+            margin-left: 60rem;
+             }
+
+        nav a{
+            padding: 12px;
+            text-decoration: none;
+            color: rgb(14, 139, 143);
+            font-weight: 600;
+            font-size: small;
+	            }     
+
+        nav a:hover{
+            color: rgb(197, 162, 6);
+        }
+
+        .bkn{
+        padding: 5px;
+        border-radius: 20px;
+        color: rgb(14, 139, 143);
+        font-size:small;
+        font-weight: 700;
+        border: 1px solid ;
+        cursor: pointer;
+        background-color: white;
+        }
+
+        .bkn:hover{
+            background-color: rgb(197, 162, 6);
+        }
+        
+        .inner h3{
+            margin: 5px;
+        }
+        .eded h3{
+            margin: 7px;
+        }
+
+        .bod1{
+                padding: 150px;
+                color: black;
+                border: 0;
+                border-radius: 6px;
+                outline: 0;
+                display: block;
+                width: 100%;
+                font-weight: 400;
+             }
+        .boda{
+                margin: 8px;
+                width: 27%;
+                border-radius: 6px;
+            }
+        .bodb{
+            width: 80%;
+            font-size: medium;
+        }
+        .eded{
+            background-image:url(../Images/img1.png);
+            background-position:top left 60rem;
+            background-size:1900px;
+            background-repeat: no-repeat;
+            height: 550px;
+        }
+
+        .bokn{
+        padding: 5px;
+        border-radius: 20px;
+        color: white;
+        font-size:small;
+        font-weight: 600;
+        border: 0;
+        cursor: pointer;
+        background-color:orange;
+            }
+        .redi{
+            display: flex;
+        }
+
+        .redi img{
+            background-color: rgb(243, 242, 242);
+            width: 150%;
+            height: 700px;
+        }
+        .midi{
+            margin-top: 120px;
+            margin-left: 20px;
+        }
+        .box3{
+            background-color: rgb(243, 242, 242);
+            display: block;   
+            width: 41%;
+            margin-top: 200px ;
+            margin-bottom: 5%;
+            margin-top: 1%;
+        }
+        .box3 h3{
+            width: 350px;
+        }
+
+        .fdie-img{ 
+            background-color: rgb(243, 242, 242);
+	        background-repeat:no-repeat;
+            background-size: cover; 
+            background-position:center;
+            margin-top: 4px;
+             }
+
+        .palmer{
+                background-color: #fff;
+                margin: 8px;
+                width: 100%;
+                box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, .2);
+                border-radius: 6px;
+            }
+
+        .box1 button{
+                background-color: orange;
+                padding: 5px;
+                margin: 0;
+                color: black;
+                border: 0;
+                border-radius: 6px;
+                outline: 0;
+                cursor: pointer;
+                width: 30%;
+                font-weight: 400;
+            }
+        .box1 button:hover{
+                background-color: rgb(28, 28, 28,.4);
+            }
+        .box0 h4{
+            color: rgb(255, 208, 0);
+        }
+
+        .box1{
+             display: flex;   
+             width: 90%;
+             margin: auto;
+             text-align: center;
+             margin-bottom: 5%;
+            }
+
+        .box0{
+             display: block;   
+             width: 20%;
+             margin: auto;
+             text-align: center;
+             margin-bottom: 5%;
+            }
+        .box4{
+             display: block;   
+             width: 50%;
+             margin: auto;
+             text-align: center;
+             margin-bottom: 2%;
+            }
+        #email{
+            padding: 10px;
+            border-radius: 20px;
+            border: 0;
+            box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, .2);
+        }
+
+        .inner{
+                margin: auto;
+                width: 80%;
+                margin-bottom: 1.5rem;
+            }
+        .ovie{
+            background-color: rgb(12, 12, 12);
+        }
+        .ind{
+                width: 80%;
+                color: white;
+                background-color: rgb(12, 12, 12);
+            }
+        .ind a{
+            color: white;
+        }
+        .ind a:hover{
+            color: aqua;
+        }
+        .box5{
+             display: flex;   
+             width: 70%;
+             margin: auto;
+             text-align: center;
+             background-color: rgb(12, 12, 12);
+            }
+        .palm{
+                margin: 8px;
+                margin-top: 20px;
+                width: 100%;
+                background-color: rgb(12, 12, 12);
+            }
+    </style>
+</head>
+<body>
+  <div class="eded"> 
+    <header>
+        <h3>Foodie</h3>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">TESTIMONY</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">CART</a>
+            <a href="#"><button onclick="Ftxt1()" class="bkn">Book Now</button></a>
+            <div id="read"></div>
+        </nav>
+    </header>
+
+    <div class="bod1">
+        <div class="boda">
+        <div class="bodb"><h2></h2></div>
+        Healthy switcher chefs do all the prep work. 
+        like peeling, chopping & maintaining, so you can cook a
+        fresh food.
+        <div><button onclick="Ftxt2()" class="bokn">Order Now</button></div>
+        <div id="show"></div>
+        </div>
+    </div> 
+  </div>
+
+  <div class="redi">
+       <div><img src="../Images/img1.png" class="fdie-img" /></div>
+       <div class="box3">
+          <div class="midi">
+             <h3></h3>
+             <p>Lorem ipsum dolor sit amet consectetur.Non tincidunt magna non et elit.
+                Dolor turpis molestie dui magnis facilisis at fringilla quam.</p>
+             <button class="bokn">Learn More</button> <button class="bokn">Watch Video</button>
+          </div>
+       </div>
+  </div>
+  </div> 
+
+    <div class="box0">
+        <h4>Works</h4>
+        <h2>How it Works</h2>
+        Lorem ipsum dolor sit amet consectetur.
+        Non tincidunt magna non et elit.
+        Dolor turpis molestie dui magnis facilisis at fringilla quam.
+    </div>
+
+    <div class="box1">
+        <div class="palmer">
+            <div class="inner">
+                <h3></h3>
+                <p></p>
+                <button>TRY NOW</button>
+            </div>
+        </div>
+        <div class="palmer">           
+            <div class="inner">
+                <h3></h3>
+                <p></p>
+                <button>TRY NOW</button>
+            </div>
+        </div>    
+        <div class="palmer">
+           <div class="inner">
+                <h3></h3>
+                <p></p>
+                <button>TRY NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box0">
+        <h4>Hear From Our Clients</h4>
+        <h2>WHAT THEY SAY</h2>
+        Lorem ipsum dolor sit amet consectetur.
+        Non tincidunt magna non et elit.
+        Dolor turpis molestie dui magnis facilisis at fringilla quam.
+    </div>
+    <div class="box4">
+        <h4>Have Question in Mind? Let Us Help You</h4>
+        <form action="">   
+            <input type="text" placeholder="your question" class="container" id="email">
+            <input type="email" placeholder="your email, e.g. mail@gmail.com" class="container m-3 w-75" id="email"> <button type="button" class="btn btn-primary">SUBMIT</button>
+        </form>
+    </div>
+    <div class="ovie">
+        <div class="box5">
+            <div class="palm">
+                <div class="ind">
+                    <h5>Our Social Media</h5>
+                    <a href="#"><p>WhatsApp</p></a>
+                    <a href="#"><p>Instagram</p></a>
+                    <a href="#"><p>FaceBook</p></a>
+                    <a href="#"><p>LinkedIn</p></a>
+                </div>
+            </div>
+            <div class="palm">           
+                <div class="ind">
+                 <a href="#"><p>Quality</p></a>
+                 <a href="#"><p>Help</p></a>
+                 <a href="#"><p>Share</p></a>
+                 <a href="#"><p>Careers</p></a>
+                 <a href="#"><p>Testimonies</p></a>
+                </div>
+            </div>    
+            <div class="palm">
+               <div class="ind">
+                <a href="#"><p>0908776657</p></a>
+                <a href="#"><p>info@foodie.com</p></a>
+                </div>
+            </div>
+        <div class="palm">
+               <div class="ind">
+                 <a href="#"><p>Terms and Conditions</p></a>
+                 <a href="#"><p>Privacy Policy</p></a>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    ren = document.querySelectorAll('h2');
+    a = 'Your Favourite Food Delivered Hot & Fresh'
+    ren[0].innerHTML = a;
+
+    elt = document.querySelectorAll('h3');
+    t = "Food Is An Important Part Of A Balanced Diet"
+    elt[1].innerHTML = t;
+
+    text1 = 'Pick ';
+    text2 = "Meals";
+    elt[2].innerHTML = text1.toUpperCase()+text2.toUpperCase();
+
+    w = "ask us how"
+    elt[3].innerHTML = w.toUpperCase();
+
+    s = 'Deli'
+    u = 'very'
+    elt[4].innerHTML  = (s.concat(u)).toUpperCase();
+
+    klt = document.querySelectorAll('p');
+    j = 'Lorem ipsum dolor sit amet consectur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.'
+    klt[1].innerHTML = j;
+    klt[2].innerHTML = j;
+    klt[3].innerHTML = j;
+
+    function Ftxt1(){
+        let myReq = new XMLHttpRequest();
+        myReq.onreadystatechange=function(){
+            if(this.readyState=='4' && this.status=='200'){
+                document.querySelector('#read').innerHTML = this.responseText;
+                }
+            }
+        myReq.open('GET','Foodie.txt',true);
+        myReq.send();
+                }
+   function Ftxt2(){
+        let myReq = new XMLHttpRequest();
+        myReq.onreadystatechange=function(){
+            if(this.readyState=='4' && this.status=='200'){
+                document.querySelector('#show').innerHTML = this.responseText;
+                }
+            }
+        myReq.open('GET','Foodie.txt',true);
+        myReq.send();
+                }
+
+</script>
+</html>
